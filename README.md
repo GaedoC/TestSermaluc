@@ -8,7 +8,7 @@ Desarrollo con Spring Boot, Spring Security, REST, OAuth2, Arquitectura de Micro
 3. Curl o Postman
 ##
 
-# Para levantar el proyecto en el siguiente Orden:
+# Levantar proyecto en el siguiente Orden:
 
 ##1. Generar JAR de libreria commons de Model de Usuarios:
 Dirigirse al directorio del microservicio desde una consola y ejecutar las siguientes líneas de comandos:
