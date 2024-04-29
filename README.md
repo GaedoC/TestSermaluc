@@ -2,7 +2,7 @@
 Pruba técnica SERMALUC.
 ##
 
-# Requisitos# para Levantar los servicios:
+# Requisitos para Levantar los servicios:
 Open JDK JAVA 11.
 Maven.
 Curl o Postman.
