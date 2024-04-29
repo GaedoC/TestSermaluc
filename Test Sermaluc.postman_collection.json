@@ -1,0 +1,154 @@
+{
+	"info": {
+		"_postman_id": "529aa240-2672-40e8-a35a-ed3f653a19c9",
+		"name": "Test Sermaluc",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "472387"
+	},
+	"item": [
+		{
+			"name": "GetAllUser",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8090/api/usuarios/usuarios/"
+			},
+			"response": []
+		},
+		{
+			"name": "InsertUser",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhbmRyZXMiLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiYXBlbGxpZG8iOiJBZWRvIiwiY29ycmVvIjoiY2FlZG9AbWFpbC5jb20iLCJleHAiOjE3MTQzNDI1MjAsIm5vbWJyZSI6IkNyaXN0b2JhbCIsImF1dGhvcml0aWVzIjpbIlJPTEVfQURNSU4iLCJST0xFX1VTRVIiXSwianRpIjoiY2M5ZTIwZGQtMTE1NS00OGMwLTlkMjUtOTY4ODMzYzU4NWUyIiwiY2xpZW50X2lkIjoiZnJvbnRlbmRhcHAifQ.NnzMVUui250jI5SwtSZ5iXDQNC3RI1UcsRX2BzADcoY"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fechaCreacion\": null,\r\n    \"fechaActualizacion\": null,\r\n    \"username\": \"test\",\r\n    \"password\": \"$2a$10$NZp9GgbTPYFft6oPjZyLXOeIoGb.0WJGdqOSwqNjLzI2pfLXMJYsm\",\r\n    \"enabled\": true,\r\n    \"nombre\": \"test\",\r\n    \"apellido\": \"Aedo\",\r\n    \"email\": \"test@mail.com\",\r\n    \"phones\": [\r\n        { \r\n            \"id\": 1,\r\n            \"number\": 56505213,\r\n            \"citycode\": 9,\r\n            \"countryCode\": 56\r\n        },\r\n        {\r\n              \"id\": 2,\r\n            \"number\": 56505213,\r\n            \"citycode\": 9,\r\n            \"countryCode\": 56\r\n        }\r\n    ],\r\n    \"roles\": [\r\n        {\r\n            \"id\": 1,\r\n            \"nombre\": \"ROLE_USER\"\r\n        },\r\n         {\r\n            \"id\": 2,\r\n            \"nombre\": \"ROLE_ADMIN\"\r\n        }\r\n    ]\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8090/api/usuarios/usuarios/"
+			},
+			"response": []
+		},
+		{
+			"name": "Update User Copy",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhbmRyZXMiLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiYXBlbGxpZG8iOiJBZWRvIiwiY29ycmVvIjoiY2FlZG9AbWFpbC5jb20iLCJleHAiOjE3MTQzNDI1MjAsIm5vbWJyZSI6IkNyaXN0b2JhbCIsImF1dGhvcml0aWVzIjpbIlJPTEVfQURNSU4iLCJST0xFX1VTRVIiXSwianRpIjoiY2M5ZTIwZGQtMTE1NS00OGMwLTlkMjUtOTY4ODMzYzU4NWUyIiwiY2xpZW50X2lkIjoiZnJvbnRlbmRhcHAifQ.NnzMVUui250jI5SwtSZ5iXDQNC3RI1UcsRX2BzADcoY"
+					}
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fechaCreacion\": null,\r\n    \"fechaActualizacion\": null,\r\n    \"username\": \"testModificado\",\r\n    \"password\": \"$2a$10$NZp9GgbTPYFft6oPjZyLXOeIoGb.0WJGdqOSwqNjLzI2pfLXMJYsm\",\r\n    \"enabled\": true,\r\n    \"nombre\": \"testModificado\",\r\n    \"apellido\": \"Aedo\",\r\n    \"email\": \"testmail.com\",\r\n    \"phones\": [\r\n        { \r\n            \"id\": 1,\r\n            \"number\": 56505213,\r\n            \"citycode\": 9,\r\n            \"countryCode\": 56\r\n        },\r\n        {\r\n              \"id\": 2,\r\n            \"number\": 56505213,\r\n            \"citycode\": 9,\r\n            \"countryCode\": 56\r\n        }\r\n    ],\r\n    \"roles\": [\r\n        {\r\n            \"id\": 1,\r\n            \"nombre\": \"ROLE_USER\"\r\n        },\r\n         {\r\n            \"id\": 2,\r\n            \"nombre\": \"ROLE_ADMIN\"\r\n        }\r\n    ]\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8090/api/usuarios/usuarios/4"
+			},
+			"response": []
+		},
+		{
+			"name": "GetByIdUser",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "frontendappkj",
+						"password": "12345"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "user",
+							"value": "frontendapp",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345",
+							"type": "text"
+						},
+						{
+							"key": "grand_type",
+							"value": "password",
+							"type": "text"
+						}
+					]
+				},
+				"url": "localhost:8090/api/usuarios/usuarios/1"
+			},
+			"response": []
+		},
+		{
+			"name": "getToken",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "frontendapp",
+						"password": "12345"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "frontendapp",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						}
+					]
+				},
+				"url": "localhost:8090/api/security/oauth/token"
+			},
+			"response": []
+		}
+	]
+}
