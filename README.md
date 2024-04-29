@@ -3,9 +3,9 @@ Pruba técnica SERMALUC.
 ##
 
 # Requisitos para Levantar los servicios:
-Open JDK JAVA 11.
-Maven.
-Curl o Postman.
+1. Open JDK JAVA 11
+2. Maven
+3. Curl o Postman
 ##
 
 # Para levantar el proyecto:
@@ -38,6 +38,7 @@ Dirigirse al directorio del gateway microservicio gateway desde una consola y ej
 Dirigirse al directorio del microservicio  desde una consola y ejecutar las siguientes líneas de comandos:
 1. cd ./springboot-servicio-usuarios-commons 
 2. mvn clean install
+   
 ##
 
 # Probando los end - point 
