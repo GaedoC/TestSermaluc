@@ -10,30 +10,34 @@ Desarrollo con Spring Boot, Spring Security, REST, OAuth2, Arquitectura de Micro
 
 # Levantar proyecto en el siguiente Orden:
 
-1. Generar JAR de libreria commons de Model de Usuarios:
+
+## 1. Generar JAR de libreria commons de Model de Usuarios:
 Dirigirse al directorio del microservicio desde una consola y ejecutar las siguientes líneas de comandos:
 1. cd ./springboot-servicio-usuarios-commons 
 2. mvn clean install
 
-2. Iniciar microservicio Eureka: 
+
+## 2. Iniciar microservicio Eureka: 
 Dirigirse al directorio del microservicio servidor eureka desde una consola y ejecutar las siguientes líneas de comandos:
 1. cd ./springboot-servicio-eureka-server 
 2. mvn clean install
 3. mvn spring-boot:run
    
-3. Iniciar microservicio OAuth:
+## 3. Iniciar microservicio OAuth:
 Dirigirse al directorio del microservicio oauth desde una consola y ejecutar las siguientes líneas de comandos:
 1. cd ./springboot-servicio-oauth-server 
 2. mvn clean install
 3. mvn spring-boot:run
    
-4. Iniciar microservicio Usuarios:
+
+## 4. Iniciar microservicio Usuarios:
 Dirigirse al directorio del microservicio usuarios desde una consola y ejecutar las siguientes líneas de comandos:
 1. cd ./springboot-servicio-usuarios-server 
 2. mvn clean install
 3. mvn spring-boot:run
    
-5. Iniciar microservicio Gateway:
+
+## 5. Iniciar microservicio Gateway:
 Dirigirse al directorio del gateway microservicio gateway desde una consola y ejecutar las siguientes líneas de comandos:
 1. cd ./springboot-servicio-zuul-server 
 2. mvn clean install
