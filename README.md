@@ -1,5 +1,5 @@
-# Test Sermaluc
-Pruba técnica SERMALUC.
+# Prueba Técnica Sermaluc
+Desarrollo con Spring Boot, Spring Security, REST, OAuth2, Arquitectura de Microservicios compuesto por: Microservicio Servidor de registro, Microservicio Servidor Gateway, Microservicio servidor de Autenticación OAUTH2 y JWT, Microservicio Commons Usuarios, Microservicio  Usuarios.
 ##
 
 # Requisitos para Levantar los servicios:
