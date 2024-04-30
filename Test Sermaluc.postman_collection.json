@@ -57,21 +57,21 @@
 				"auth": {
 					"type": "bearer",
 					"bearer": {
-						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhbmRyZXMiLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiYXBlbGxpZG8iOiJBZWRvIiwiY29ycmVvIjoiY2FlZG9AbWFpbC5jb20iLCJleHAiOjE3MTQzNDI1MjAsIm5vbWJyZSI6IkNyaXN0b2JhbCIsImF1dGhvcml0aWVzIjpbIlJPTEVfQURNSU4iLCJST0xFX1VTRVIiXSwianRpIjoiY2M5ZTIwZGQtMTE1NS00OGMwLTlkMjUtOTY4ODMzYzU4NWUyIiwiY2xpZW50X2lkIjoiZnJvbnRlbmRhcHAifQ.NnzMVUui250jI5SwtSZ5iXDQNC3RI1UcsRX2BzADcoY"
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhbmRyZXMiLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiYXBlbGxpZG8iOiJBZWRvIiwiY29ycmVvIjoiY2FlZG9AbWFpbC5jb20iLCJleHAiOjE3MTQzNjkzMjAsIm5vbWJyZSI6IkNyaXN0b2JhbCIsImF1dGhvcml0aWVzIjpbIlJPTEVfQURNSU4iLCJST0xFX1VTRVIiXSwianRpIjoiMDc2Y2RhYTMtOTA1NC00ODVkLWFlNDktYWVlZDk1YTRmMGE1IiwiY2xpZW50X2lkIjoiZnJvbnRlbmRhcHAifQ.uB5hpOO1qVdx-OEdJnJDfP_ZtMXz34d8bOV9_axi6oE"
 					}
 				},
 				"method": "PUT",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"fechaCreacion\": null,\r\n    \"fechaActualizacion\": null,\r\n    \"username\": \"testModificado\",\r\n    \"password\": \"$2a$10$NZp9GgbTPYFft6oPjZyLXOeIoGb.0WJGdqOSwqNjLzI2pfLXMJYsm\",\r\n    \"enabled\": true,\r\n    \"nombre\": \"testModificado\",\r\n    \"apellido\": \"Aedo\",\r\n    \"email\": \"testmail.com\",\r\n    \"phones\": [\r\n        { \r\n            \"id\": 1,\r\n            \"number\": 56505213,\r\n            \"citycode\": 9,\r\n            \"countryCode\": 56\r\n        },\r\n        {\r\n              \"id\": 2,\r\n            \"number\": 56505213,\r\n            \"citycode\": 9,\r\n            \"countryCode\": 56\r\n        }\r\n    ],\r\n    \"roles\": [\r\n        {\r\n            \"id\": 1,\r\n            \"nombre\": \"ROLE_USER\"\r\n        },\r\n         {\r\n            \"id\": 2,\r\n            \"nombre\": \"ROLE_ADMIN\"\r\n        }\r\n    ]\r\n\r\n}",
+					"raw": "{\r\n    \"fechaCreacion\": \"2024-04-29T04:43:09.739+00:00\",\r\n    \"fechaActualizacion\": null,\r\n    \"username\": \"subAdmin\",\r\n    \"password\": \"$2a$10$NZp9GgbTPYFft6oPjZyLXOeIoGb.0WJGdqOSwqNjLzI2pfLXMJYsm\",\r\n    \"enabled\": true,\r\n    \"nombre\": \"Gustavo\",\r\n    \"apellido\": \"Aedo\",\r\n    \"email\": \"subAdmin@admin.com\",\r\n    \"phones\": [\r\n        { \r\n            \"id\": 1,\r\n            \"number\": 56505213,\r\n            \"citycode\": 9,\r\n            \"countryCode\": 56\r\n        },\r\n        {\r\n              \"id\": 2,\r\n            \"number\": 56505213,\r\n            \"citycode\": 9,\r\n            \"countryCode\": 56\r\n        }\r\n    ],\r\n    \"roles\": [\r\n        {\r\n            \"id\": 1,\r\n            \"nombre\": \"ROLE_USER\"\r\n        },\r\n         {\r\n            \"id\": 2,\r\n            \"nombre\": \"ROLE_ADMIN\"\r\n        }\r\n    ]\r\n\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
 						}
 					}
 				},
-				"url": "http://localhost:8090/api/usuarios/usuarios/4"
+				"url": "http://localhost:8090/api/usuarios/usuarios/1"
 			},
 			"response": []
 		},
@@ -131,7 +131,7 @@
 					"urlencoded": [
 						{
 							"key": "username",
-							"value": "frontendapp",
+							"value": "andres",
 							"type": "text"
 						},
 						{
